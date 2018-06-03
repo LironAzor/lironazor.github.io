@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Liron Becker Protfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="portStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+	<div class="wrapper">
+		<header id= "top" class="header">
+			<section class="logo">
+				<img src="images/logo.png" alt="Liron Becker"/>
+			</section> 
+			<section class="title">
+				<h1>Liron Becker</h1> 
+				<h3> Front-End ninja</h3>
+			</section>
+		</header>
+		<main>
+			<section class="mainHeader">
+				<div class="nav">
+					<div id="myWork" class="tabcontent">
+						<a  href="#thumbline1">My Work</a>
+					</div>
+					<div id="contactMe" class="tabcontent">
+						<a href="#contact">Contact Me</a>
+					</div>
+				</div>
+				<div class="headTitle">
+					<h2 class="center">Looking for a Front-End web developer?</h2>
+					<p class="center">Hi, I'm Liron and I'm a Fron-End web developer.</p>
+					<p class="center">Check out my work</p>
+				</div>
+				<div class="arrow"><a class="arrow" href="#thumbline1">&#8615;</a></div>
+			</section>
+			<div class="feature"> 
+				<p>Featured Work</p>
+			</div>
+			<section class="thumbMain">
+				<div class="thumbRubic">
+					<div id="thumbline1" class="thumbline">
+						<div class="thumblinePic"><img src="images/BrightonTimes.png" alt="Project"/></div>
+						<h2>BrightonTimes Project </h2>
+					</div>
+						<div id="thumbline2" class="thumbline">
+						<div class="thumblinePic"><img src="images/BrightonTimes.png" alt="Project"/></div>
+						<h2>BrightonTimes Project </h2>
+					</div>
+						<div id="thumbline3" class="thumbline">
+						<div class="thumblinePic"><img src="images/BrightonTimes.png" alt="Project"/></div>
+						<h2>BrightonTimes Project </h2>
+					</div>
+						<div id="thumbline4" class="thumbline">
+						<div class="thumblinePic"><img src="images/BrightonTimes.png" alt="Project"/></div>
+						<h2>BrightonTimes Project </h2>
+					</div>
+						<div id="thumbline5" class="thumbline">
+						<div class="thumblinePic"><img src="images/BrightonTimes.png" alt="Project"/></div>
+						<h2>BrightonTimes Project </h2>
+					</div>
+				</div>
+				<div class="arrowContact"><a class="arrowContact" href="#contact">&#8615;</a></div>
+			</section>
+			<section class="contactForm">
+				<div class="form">
+					<h1 id="contact">Contact Me</h1>
+					<form action="/action_page.php">
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+						<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+				<div class="arrowTop"><a class="arrowTop" href="#top">&#x21A5;</a></div>
+				<footer>
+					<p>Powered by Liron Becker</p> 
+				</footer>
+			</section>	
+		</main>
+	</div>
+  <script>
+		$(document).ready(function(){
+		   $(".arrow").click(function(e){
+				$("#thumbline1").fadeIn(200).fadeOut(200).fadeIn(200); 
+			});
+			 $(".arrowContact").click(function(e){
+				$("#contact").fadeIn(200).fadeOut(200).fadeIn(200); 
+			});	 	 
+			$("#contactMe").click(function(e){
+				$("#contact").fadeIn(200).fadeOut(200).fadeIn(200); 
+			});	 
+			$("#myWork").click(function(e){
+				$("#thumbline1").fadeIn(200).fadeOut(200).fadeIn(200); 
+			});
+			var headerHeight = $( "header" ).height();
+			$(".mainHeader").css("height"," -webkit-calc(100vh - " + headerHeight + "px)");
+		});
+		var body = $("html, body");
+		body.stop().animate({scrollTop:0}, 500, 'swing', function() { 
+		});
+  </script>
+  </body>    
+</html>
