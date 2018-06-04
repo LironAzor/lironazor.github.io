@@ -100,9 +100,9 @@ a {
 section.mainHeader p.center {
 	font-size:15px;
 	font-family: Comic Sans MS,Garamond;
-		position:relative;
-		top:15%;
-		color:white;
+	position:relative;
+	top:15%;
+	color: #31afd8;
 }
 
 .mainHeader h2{
@@ -112,16 +112,19 @@ section.mainHeader p.center {
 }
 .header {
 	width: 100%;
-  background-color: white;
-  border-bottom: 2px solid #f4f6f9;
-  display:flex; flex-wrap:wrap;
+ 	 background-color: white;
+ 	 border-bottom: 2px solid #f4f6f9;
+	  display:flex; flex-wrap:wrap;
 }
 
 .header img {
 	width: 100px;
 }
 
-.headTitle{height:90vh; order:2;}
+.headTitle{
+	height:90vh; 
+	order:2;
+}
 
 .title{
 	order:2;
@@ -193,7 +196,7 @@ section.mainHeader p.center {
 }
 
 .arrowContact:hover{
-   filter:brightness(110%);
+  	 filter:brightness(110%);
 }
 
 .arrowTop{
@@ -202,10 +205,12 @@ section.mainHeader p.center {
 	background-color: #31afd8;
 	width:100%;
 	bottom:0;
+	height:5vh; 
+	order:2;
 }
 
 .arrowTop:hover{
-   filter:brightness(110%);
+  	 filter:brightness(110%);
 }
 
 .thumblinePic{
@@ -262,7 +267,6 @@ input[type=submit]:hover {
 	width:100%
 }
 .form{height:90vh; order:1; padding: 20px;}
-.arrowTop{height:5vh; order:2;}
 
 /*
  *
