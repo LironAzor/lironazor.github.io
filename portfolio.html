@@ -10,6 +10,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
+	<script src="portfolio.js"></script>
 	<div class="wrapper">
 		<header id= "top" class="header">
 			<section class="logo">
@@ -74,7 +75,7 @@
 						<label for="lname">Last Name</label>
 						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 						<label for="subject">Subject</label>
-						<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+						<textarea id="subject" name="subject" placeholder="Write something.."></textarea>
 						<input type="submit" value="Submit">
 					</form>
 				</div>
@@ -85,26 +86,5 @@
 			</section>	
 		</main>
 	</div>
-  <script>
-		$(document).ready(function(){
-		   $(".arrow").click(function(e){
-				$("#thumbline1").fadeIn(200).fadeOut(200).fadeIn(200); 
-			});
-			 $(".arrowContact").click(function(e){
-				$("#contact").fadeIn(200).fadeOut(200).fadeIn(200); 
-			});	 	 
-			$("#contactMe").click(function(e){
-				$("#contact").fadeIn(200).fadeOut(200).fadeIn(200); 
-			});	 
-			$("#myWork").click(function(e){
-				$("#thumbline1").fadeIn(200).fadeOut(200).fadeIn(200); 
-			});
-			var headerHeight = $( "header" ).height();
-			$(".mainHeader").css("height"," -webkit-calc(100vh - " + headerHeight + "px)");
-		});
-		var body = $("html, body");
-		body.stop().animate({scrollTop:0}, 500, 'swing', function() { 
-		});
-  </script>
   </body>    
 </html>
