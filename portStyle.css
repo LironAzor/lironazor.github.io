@@ -169,8 +169,11 @@ section.mainHeader p.center {
  *
  */
 
-.thumbRubic{min-height:95vh; order:1; display:flex;}
-.arrowContact{height:5vh; order:2;}
+.thumbRubic{
+	min-height:95vh; 
+	order:1; 
+	display:flex;
+}
 
 .thumbMain{
 	min-height:100vh;
@@ -185,6 +188,12 @@ section.mainHeader p.center {
 	background-color: #31afd8;
 	width:100%;
 	bottom:0;
+	height:5vh; 
+	order:2;
+}
+
+.arrowContact:hover{
+   filter:brightness(110%);
 }
 
 .arrowTop{
@@ -193,6 +202,10 @@ section.mainHeader p.center {
 	background-color: #31afd8;
 	width:100%;
 	bottom:0;
+}
+
+.arrowTop:hover{
+   filter:brightness(110%);
 }
 
 .thumblinePic{
