@@ -88,7 +88,7 @@ a {
 */
 .mainHeader {
 	width:100%;
-	background-image:url("images/header1.png");
+	background-image:url(../"images/header1.png");
 	background-size:     cover;                     
     background-repeat:   no-repeat;
     background-position: center center;    
